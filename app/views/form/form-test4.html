@@ -1,0 +1,411 @@
+<style>
+  .question-page {
+    display: none;
+  }
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  .pagination li {
+    margin: 0 5px;
+  }
+  .pagination li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+</style>
+
+
+<!-- esto es el test 1 -->
+
+<div class="bg-white border mb-3 p-3">
+	<div class="">
+		<p class="card-text">
+			Instrucciones: Lea cuidadosamente cada Enunciado y piense de qué manera se aplicaría a usted. En la sección 
+Ponderación de cada línea coloque una equis “X” clara y legible según el número que mejor describe su reacción. No
+tiene que dejar enunciados sin contestar; en la sección de Ponderación el valor mínimo es 1 y el valor máximo es 5.
+		</p>
+	</div>
+</div>
+
+<form method="POST" action="">
+<div class="question-page">
+	<p><strong>1. ¿Te resulta difícil mantener la atención, concentración, memoria y entender las instrucciones en los 
+trabajos que realizas?</strong></p>
+	<ol type="1">
+		<li><input type="radio" name="p1" value="1" required />Casi nunca</li>
+		<li><input type="radio" name="p1" value="2" required /> Rara vez</li>
+		<li><input type="radio" name="p1" value="3" required /> A veces</li>
+		<li>
+			<input type="radio" name="p1" value="4" required />Frecuentemente
+		</li>
+		<li>
+			<input type="radio" name="p1" value="5" required />
+			Casi siempre
+		</li>
+	</ol>
+	<p>
+		<strong>
+			2.  ¿Normalmente tienes pensamientos negativos y recurrentes de que algo malo va a pasar?
+		</strong>
+	</p>
+	<ol type="1">
+		<li><input type="radio" name="p2" value="1" required /> Casi nunca</li>
+		<li><input type="radio" name="p2" value="2" required /> Rara vez</li>
+		<li><input type="radio" name="p2" value="3" required /> A veces</li>
+		<li>
+			<input type="radio" name="p2" value="4" required />
+			Frecuentemente
+		</li>
+		<li>
+			<input type="radio" name="p2" value="5" required /> Casi siempre
+		</li>
+	</ol>
+
+	<p><strong>3.  ¿Te cuesta trabajo hacer amistades?</strong></p>
+	<ol type="1">
+		<li><input type="radio" name="p3" value="1" required /> Casi nunca</li>
+		<li><input type="radio" name="p3" value="2" required /> Rara vez</li>
+		<li><input type="radio" name="p3" value="3" required /> A veces</li>
+		<li>
+			<input type="radio" name="p3" value="4" required />
+			Frecuentemente
+		</li>
+		<li>
+			<input type="radio" name="p3" value="5" required /> Casi siempre
+		</li>
+	</ol>
+
+	<p>
+		<strong
+			>4. ¿Te cuesta empezar algo y concluirlo?</strong
+		>
+	</p>
+	<ol type="1">
+		<li><input type="radio" name="p4" value="1" required /> Casi nunca</li>
+		<li><input type="radio" name="p4" value="2" required /> Rara vez</li>
+		<li><input type="radio" name="p4" value="3" required /> A veces</li>
+		<li>
+			<input type="radio" name="p4" value="4" required />
+			Frecuentemente
+		</li>
+		<li>
+			<input type="radio" name="p4" value="5" required /> Casi siempre
+		</li>
+	</ol>
+
+	<p><strong>5. ¿Tienes alteraciones en la lectura y escritura como mala ortografía, cambiar las palabras y/o letras, 
+o agregar/quitar letras en lo que escribes?</strong></p>
+	<ol type="1">
+		<li><input type="radio" name="p5" value="1" required /> Casi nunca</li>
+		<li><input type="radio" name="p5" value="2" required /> Rara vez</li>
+		<li><input type="radio" name="p5" value="3" required /> A veces</li>
+		<li>
+			<input type="radio" name="p5" value="4" required />
+			Frecuentemente
+		</li>
+		<li>
+			<input type="radio" name="p5" value="5" required /> Casi siempre
+		</li>
+	</ol>
+
+	<p><strong>6. 
+¿Sueles padecer algunos de estos síntomas: opresión en el pecho, corazón acelerado, temblor, 
+sudoración, problemas en el estómago?</strong></p>
+	<ol type="1">
+		<li><input type="radio" name="p6" value="1" required /> Casi nunca</li>
+		<li><input type="radio" name="p6" value="2" required /> Rara vez</li>
+		<li><input type="radio" name="p6" value="3" required /> A veces</li>
+		<li>
+			<input type="radio" name="p6" value="4" required />
+			Frecuentemente
+		</li>
+		<li>
+			<input type="radio" name="p6" value="5" required /> Casi siempre
+		</li>
+	</ol>
+
+	<p><strong>7. Necesito recreos frecuentes cuando estudio</strong></p>
+	<ol type="1">
+		<li><input type="radio" name="p7" value="1" required /> Casi nunca</li>
+		<li><input type="radio" name="p7" value="2" required /> Rara vez</li>
+		<li><input type="radio" name="p7" value="3" required /> A veces</li>
+		<li>
+			<input type="radio" name="p7" value="4" required />
+			Frecuentemente
+		</li>
+		<li>
+			<input type="radio" name="p7" value="5" required /> Casi siempre
+		</li>
+	</ol>
+
+	<p>
+		<strong
+			>8. Pienso mejor cuando tengo la libertad de moverme, estar sentado
+			detrás de un escritorio no es para mí</strong
+		>
+	</p>
+	<ol type="1">
+		<li><input type="radio" name="p8" value="1" required /> Casi nunca</li>
+		<li><input type="radio" name="p8" value="2" required /> Rara vez</li>
+		<li><input type="radio" name="p8" value="3" required /> A veces</li>
+		<li>
+			<input type="radio" name="p8" value="4" required />
+			Frecuentemente
+		</li>
+		<li>
+			<input type="radio" name="p8" value="5" required /> Casi siempre
+		</li>
+	</ol>
+
+	<p><strong>9. Tomo muchas notas de lo que leo y escucho. </strong></p>
+	<ol type="1">
+		<li><input type="radio" name="p9" value="1" required /> Casi nunca</li>
+		<li><input type="radio" name="p9" value="2" required /> Rara vez</li>
+		<li><input type="radio" name="p9" value="3" required /> A veces</li>
+		<li>
+			<input type="radio" name="p9" value="4" required />
+			Frecuentemente
+		</li>
+		<li>
+			<input type="radio" name="p9" value="5" required /> Casi siempre
+		</li>
+	</ol>
+
+	<p>
+		<strong
+			>10. Me ayuda MIRAR a la persona que está hablando. Me mantiene
+			enfocado.
+		</strong>
+	</p>
+	<ol type="1">
+		<li><input type="radio" name="p10" value="1" required /> Casi nunca</li>
+		<li><input type="radio" name="p10" value="2" required /> Rara vez</li>
+		<li><input type="radio" name="p10" value="3" required /> A veces</li>
+		<li>
+			<input type="radio" name="p10" value="4" required />
+			Frecuentemente
+		</li>
+		<li>
+			<input type="radio" name="p10"value="1" required" required /> Casi
+			siempre
+		</li>
+	</ol>
+</div>
+  <div class="question-page">
+	<p>
+		<strong
+			>11. Se me hace difícil entender lo que una persona está diciendo si
+			hay ruidos alrededor.
+		</strong>
+	</p>
+	<ol type="1">
+		<li><input type="radio" name="p11" value="1" required /> Casi nunca</li>
+		<li><input type="radio" name="p11" value="2" required /> Rara vez</li>
+		<li><input type="radio" name="p11" value="3" required /> A veces</li>
+		<li>
+			<input type="radio" name="p11" value="4" required />
+			Frecuentemente
+		</li>
+		<li>
+			<input type="radio" name="p11" value="5" required /> Casi siempre
+		</li>
+	</ol>
+
+	<p>
+		<strong
+			>12. Prefiero que alguien me diga cómo tengo que hacer las cosas que
+			leer las instrucciones.
+		</strong>
+	</p>
+	<ol type="1">
+		<li><input type="radio" name="p12" value="1" required /> Rara vez</li>
+		<li><input type="radio" name="p12" value="2" required /> A veces</li>
+		<li><input type="radio" name="p12" value="3" required /> Casi nunca</li>
+		<li>
+			<input type="radio" name="p12" value="4" required />
+			Frecuentemente
+		</li>
+		<li>
+			<input type="radio" name="p12" value="5" required /> Casi siempre
+		</li>
+	</ol>
+
+	<p>
+		<strong
+			>13. Prefiero escuchar una conferencia o una grabación a leer un
+			libro
+		</strong>
+	</p>
+	<ol type="1">
+		<li><input type="radio" name="p13" value="1" required /> Casi nunca</li>
+		<li><input type="radio" name="p13" value="2" required /> Rara vez</li>
+		<li><input type="radio" name="p13" value="3" required /> A veces</li>
+		<li>
+			<input type="radio" name="p13" value="4" required />
+			Frecuentemente
+		</li>
+		<li>
+			<input type="radio" name="p13" value="5" required /> Casi siempre
+		</li>
+	</ol>
+
+	<p>
+		<strong
+			>14. Cuando no puedo pensar en una palabra específica, uso mis manos
+			y llamo al objeto “coso”.
+		</strong>
+	</p>
+	<ol type="1">
+		<li><input type="radio" name="p14" value="1" required /> Casi nunca</li>
+		<li><input type="radio" name="p14" value="2" required /> Rara vez</li>
+		<li><input type="radio" name="p14" value="3" required /> A veces</li>
+		<li>
+			<input type="radio" name="p14" value="4" required />
+			Frecuentemente
+		</li>
+		<li>
+			<input type="radio" name="p14" value="5" required /> Casi siempre
+		</li>
+	</ol>
+
+	<p>
+		<strong
+			>15. Puedo seguir fácilmente a una persona que está hablando aunque
+			mi cabeza esté hacia abajo o me encuentre mirando por una
+			ventana.</strong
+		>
+	</p>
+	<ol type="1">
+		<li><input type="radio" name="p15" value="1" required /> Casi nunca</li>
+		<li><input type="radio" name="p15" value="2" required /> Rara vez</li>
+		<li><input type="radio" name="p15" value="3" required /> A veces</li>
+		<li>
+			<input type="radio" name="p15" value="4" required />
+			Frecuentemente
+		</li>
+		<li>
+			<input type="radio" name="p15" value="5" required /> Casi siempre
+		</li>
+	</ol>
+
+	<p>
+		<strong
+			>16. Es más fácil para mí hacer un trabajo en un lugar
+			tranquilo.</strong
+		>
+	</p>
+	<ol type="1">
+		<li><input type="radio" name="p16" value="1" required /> Casi nunca</li>
+		<li><input type="radio" name="p16" value="2" required /> Rara vez</li>
+		<li><input type="radio" name="p16" value="3" required /> A veces</li>
+		<li>
+			<input type="radio" name="p16" value="4" required />
+			Frecuentemente
+		</li>
+		<li>
+			<input type="radio" name="p16" value="5" required /> Casi siempre
+		</li>
+	</ol>
+
+	<p>
+		<strong>17. Me resulta fácil entender mapas, tablas y gráficos</strong>
+	</p>
+	<ol type="1">
+		<li><input type="radio" name="p17" value="1" required /> Casi nunca</li>
+		<li><input type="radio" name="p17" value="2" required /> Rara vez</li>
+		<li><input type="radio" name="p17" value="3" required /> A veces</li>
+		<li>
+			<input type="radio" name="p17" value="4" required />
+			Frecuentemente
+		</li>
+		<li>
+			<input type="radio" name="p17" value="5" required /> Casi siempre
+		</li>
+	</ol>
+
+	<p>
+		<strong
+			>18. Cuando comienzo un artículo o un libro, prefiero espiar la
+			última página.</strong
+		>
+	</p>
+	<ol type="1">
+		<li><input type="radio" name="p18" value="1" required /> Casi nunca</li>
+		<li><input type="radio" name="p18" value="2" required /> Rara vez</li>
+		<li><input type="radio" name="p18" value="3" required /> A veces</li>
+		<li>
+			<input type="radio" name="p18" value="3" required />
+			Frecuentemente
+		</li>
+		<li>
+			<input type="radio" name="p18" value="4" required /> Casi siempre
+		</li>
+	</ol>
+
+	<p>
+		<strong>19. Recuerdo mejor lo que la gente dice que su aspecto</strong>
+	</p>
+	<ol type="1">
+		<li><input type="radio" name="p19" value="1" required /> Casi nunca</li>
+		<li><input type="radio" name="p19" value="2" required /> Rara vez</li>
+		<li><input type="radio" name="p19" value="3" required /> A veces</li>
+		<li>
+			<input type="radio" name="p19" value="4" required />
+			Frecuentemente
+		</li>
+		<li>
+			<input type="radio" name="p19" value="5" required /> Casi siempre
+		</li>
+	</ol>
+
+	<p>
+		<strong>20.Recuerdo mejor si estudio en voz alta con alguien. </strong>
+	</p>
+	<ol type="1">
+		<li><input type="radio" name="p20" value="1" required /> Casi nunca</li>
+		<li><input type="radio" name="p20" value="2" required /> Rara vez</li>
+		<li><input type="radio" name="p20" value="3" required /> A veces</li>
+		<li>
+			<input type="radio" name="p20" value="4" required />
+			Frecuentemente
+		</li>
+		<li>
+			<input type="radio" name="p20" value="5" required /> Casi siempre
+		</li>
+	</ol>
+ </div>
+ 
+
+	 <!-- Pagination -->
+  <ul class="pagination">
+    <li><a href="#" class="page-link" onclick="showPage(1)">1</a></li>
+    <li><a href="#" class="page-link" onclick="showPage(2)">2</a></li>
+    <li><a href="#" class="page-link" onclick="showPage(3)">3</a></li>
+    <li><a href="#" class="page-link" onclick="showPage(4)">4</a></li>
+  </ul>
+
+	<div class="text-center mt-3">
+		<button type="submit" name="submit" class="btn btn-success btn-lg">
+			Guardar Formulario
+		</button>
+	</div>
+</form>
+
+<script>
+  const questionPages = document.querySelectorAll('.question-page');
+  
+  function showPage(pageNumber) {
+    questionPages.forEach((page, index) => {
+      if (index === pageNumber - 1) {
+        page.style.display = 'block';
+      } else {
+        page.style.display = 'none';
+      }
+    });
+  }
+</script>

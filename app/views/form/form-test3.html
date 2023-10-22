@@ -1,0 +1,1322 @@
+<style>
+  .question-page {
+    display: none;
+  }
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  .pagination li {
+    margin: 0 5px;
+  }
+  .pagination li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+</style>
+<div class="bg-white border mb-3 p-3">
+	<div class="">
+		<p class="card-text">
+		Instrucciones para responder al cuestionario: 
+		<br>
+o Este cuestionario ha sido diseñado para identificar tu estilo preferido de 
+aprender. No es un test de inteligencia, ni de personalidad. 
+<br>
+o No hay límite de tiempo para contestar el cuestionario.
+<br> 
+o No hay respuestas correctas o erróneas. Será útil en la medida que seas 
+sincero/a en tus respuestas. 
+<br>
+o Si estás más de acuerdo que en desacuerdo con la sentencia pon un signo 
+más (+), 
+Si, por el contrario, estás más en desacuerdo que de acuerdo, pon un signo 
+menos (-).
+<br> 
+o Por favor contesta a todas las sentencias.
+		</p>
+	</div>
+</div>
+
+
+<form action="" method="POST">
+	<div class="question-page">
+	<p> 
+		<strong
+			>1. Tengo fama de decir lo que pienso claramente y sin rodeos.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p1" value="1" required  /> De
+			acuerdo ( + )
+		</li>
+		<li>
+			<input type="radio" name="p1" value="0" required />
+			En desacuerdo ( - )
+		</li>
+	</ol>
+	<p>
+		<strong
+			>2. Estoy seguro/a de lo que es bueno y lo que es malo, lo que está
+			bien y lo que está mal.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p2" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p2" value="0" required /> En desacuerdo -
+		</li>
+	</ol>
+	<p><strong>3. Muchas veces actúo sin mirar las consecuencias. </strong></p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p3" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p3" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong
+			>4. Normalmente trato de resolver los problemas metódicamente y paso
+			a paso.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p4" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p4" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			5. Creo que los formalismos coartan y limitan la actuación libre de
+			las personas.</strong
+		>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p5" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p5" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			6. Me interesa saber cuáles son los sistemas de valores de los demás
+			y con qué criterios actúan.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p6" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p6" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			7. Pienso que el actuar intuitivamente puede ser siempre tan válido
+			como actuar reflexivamente</strong
+		>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p7" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p7" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			8. Creo que lo más importante es que las cosas funcionen.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p8" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p8" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			9. Procuro estar al tanto de lo que ocurre aquí y ahora.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p9" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p9" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			10. Disfruto cuando tengo tiempo para preparar mi trabajo y
+			realizarlo a conciencia.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p10" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p10" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	</div>
+  <div class="question-page">
+	<p>
+		<strong>
+			11. Estoy a gusto siguiendo un orden en las comidas, en el estudio,
+			haciendo ejercicio regularmente.</strong
+		>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p11" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p11" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong
+			>12. Cuando escucho una nueva idea enseguida comienzo a pensar cómo
+			ponerla en práctica.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p12" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p12" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			13. Prefiero las ideas originales y novedosas aunque no sean
+			prácticas.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p13" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p13" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong
+			>14. Admito y me ajusto a las normas sólo si me sirven para lograr
+			mis objetivos.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p14" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p14" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			15. Normalmente encajo bien con personas reflexivas, y me cuesta
+			sintonizar con personas demasiado espontáneas, imprevisibles.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p15" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p15" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p><strong> 16. Escucho con más frecuencia que hablo. </strong></p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p16" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p16" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong
+			>17. Prefiero las cosas estructuradas a las desordenadas.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p17" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p17" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong
+			>18. Cuando poseo cualquier información, trato de interpretarla bien
+			antes de manifestar alguna conclusión.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p18" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p18" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			19. Antes de hacer algo estudio con cuidado sus ventajas e
+			inconvenientes.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p19" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p19" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			20. Me entusiasmo con el reto de hacer algo nuevo y diferente.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p20" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p20" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	</div>
+  <div class="question-page">
+	<p>
+		<strong>
+			21. Casi siempre procuro ser coherente con mis criterios y sistemas
+			de valores. Tengo principios y los sigo.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p21" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p21" value="0" required /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			22. Cuando hay una discusión no me gusta ir con rodeos.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p22" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p22" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			23. Me disgusta implicarme afectivamente en el ambiente de la
+			escuela. Prefiero mantener relaciones distantes.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p23" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p23" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			24. Me gustan más las personas realistas y concretas que las
+			teóricas.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p24" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p24" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+
+	<p><strong> 25. Me cuesta ser creativo/a, romper estructuras.</strong></p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p25" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p25" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+
+	<p>
+		<strong>
+			26. Me siento a gusto con personas espontáneas y divertidas.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p26" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p26" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+
+	<p>
+		<strong>
+			27. La mayoría de las veces expreso abiertamente cómo me siento.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p27" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p27" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+
+	<p><strong> 28. Me gusta analizar y dar vueltas a las cosas. </strong></p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p28" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p28" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+
+	<p>
+		<strong>
+			29. Me molesta que la gente no se tome en serio las cosas.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p29" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p29" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+
+	<p>
+		<strong>
+			30. Me atrae experimentar y practicar las últimas técnicas y
+			novedades.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p30" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p30" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+</div>
+  <div class="question-page">
+	<p>
+		<strong> 31. Soy cauteloso/a a la hora de sacar conclusiones. </strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p31" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p31" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+
+	<p>
+		<strong>
+			32. Prefiero contar con el mayor número de fuentes de información.
+			Cuantos más datos reúna para reflexionar, mejor.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p32" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p32" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+
+	<p><strong> 33. Tiendo a ser perfeccionista. </strong></p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p33" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p33" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+
+	<p>
+		<strong>
+			34. Prefiero oír las opiniones de los demás antes de exponer la mía.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p34" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p34" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+
+	<p>
+		<strong>
+			35. Me gusta afrontar la vida espontáneamente y no tener que
+			planificar todo previamente.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p35" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p35" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+
+	<p>
+		<strong>
+			36. En las discusiones me gusta observar cómo actúan los demás
+			participantes.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p36" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p36" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+
+	<p>
+		<strong>
+			37. Me siento incómodo/a con las personas calladas y demasiado
+			analíticas.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p37" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p37" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+
+	<p>
+		<strong>
+			38. Juzgo con frecuencia las ideas de los demás por su valor
+			práctico</strong
+		>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p38" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p38" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+
+	<p>
+		<strong>
+			39. Me agobio si me obligan a acelerar mucho el trabajo para cumplir
+			un plazo.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p39" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p39" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+
+	<p>
+		<strong>
+			40. En las reuniones apoyo las ideas prácticas y realistas.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p40" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p40" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+</div>
+  <div class="question-page">
+	<p>
+		<strong>
+			41. Es mejor gozar del momento presente que deleitarse pensando en
+			el pasado o en el futuro</strong
+		>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p41" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p41" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+
+	<p>
+		<strong>
+			42. Me molestan las personas que siempre desean apresurar las cosas.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p42" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p42" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			43. Aporto ideas nuevas y espontáneas en los grupos de discusión.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p43" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p43" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			44. Pienso que son más consistentes las decisiones fundamentadas en
+			un minucioso análisis que las basadas en la intuición.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p44" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p44" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			45. Detecto frecuentemente la inconsistencia y puntos débiles en las
+			argumentaciones de los demás</strong
+		>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p45" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p45" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			46. Creo que es preciso saltarse las normas muchas más veces que
+			cumplirlas.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input
+				type="radio"
+				name="p46"
+				id="p46"
+				value="1"
+				required
+				
+			/>
+			De acuerdo +
+		</li>
+		<li>
+			<input
+				type="radio"
+				name="p46"
+				id="p46"
+				value="0"
+				required
+				
+			/>
+			En desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			47. A menudo caigo en la cuenta de otras formas mejores y más
+			prácticas de hacer las cosas.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p47" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p47" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p><strong> 48. En conjunto hablo más que escucho.</strong></p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p48" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p48" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			49. Prefiero distanciarme de los hechos y observarlos desde otras
+			perspectivas.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p49" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p49" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			50. Estoy convencido/a que debe imponerse la lógica y el
+			razonamiento.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p50" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p50" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	</div>
+  <div class="question-page">
+	<p><strong> 51. Me gusta buscar nuevas experiencias. </strong></p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p51" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p51" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p><strong> 52. Me gusta experimentar y aplicar las cosas. </strong></p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p52" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p52" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			53. Pienso que debemos llegar pronto al grano, al meollo de los
+			temas.</strong
+		>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p53" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p53" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			54. Siempre trato de conseguir conclusiones e ideas claras</strong
+		>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p54" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p54" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			55. Prefiero discutir cuestiones concretas y no perder el tiempo con
+			pláticas superficiales.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p55" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p55" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			56. Me impaciento cuando me dan explicaciones irrelevantes e
+			incoherentes.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p56" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p56" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong> 57. Compruebo antes si las cosas funcionan realmente. </strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p57" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p57" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			58. Hago varios borradores antes de la redacción definitiva de un
+			trabajo.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p58" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p58" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			59. Soy consciente de que en las discusiones ayudo a mantener a los
+			demás centrados en el tema, evitando divagaciones.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p59" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p59" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			60. Observo que, con frecuencia, soy uno/a de los/as más
+			objetivos/as y desapasionados/as en las discusiones.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p60" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p60" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	</div>
+  <div class="question-page">
+	<p>
+		<strong>
+			61. Cuando algo va mal, le quito importancia y trato de hacerlo
+			mejor.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p61" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p61" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			62. Rechazo ideas originales y espontáneas si no las veo prácticas.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p62" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p62" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			63. Me gusta sopesar diversas alternativas antes de tomar una
+			decisión.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p63" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p63" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			64. Con frecuencia miro hacia delante para prever el futuro.</strong
+		>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p64" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p64" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			65. En los debates y discusiones prefiero desempeñar un papel
+			secundario antes que ser el/la líder o el/la que más participa.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p65" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p65" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			66. Me molestan las personas que no actúan con lógica.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p66" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p66" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			67. Me resulta incómodo tener que planificar y prever las cosas.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p67" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p67" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			68. Creo que el fin justifica los medios en muchos casos.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p68" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p68" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong> 69. Suelo reflexionar sobre los asuntos y problemas. </strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p69" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p69" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			70. El trabajar a conciencia me llena de satisfacción y orgullo.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p70" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p70" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	</div>
+  <div class="question-page">
+	<p>
+		<strong>
+			71. Ante los acontecimientos trato de descubrir los principios y
+			teorías en que se basan.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p71" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p71" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			72. Con tal de conseguir el objetivo que pretendo soy capaz de herir
+			sentimientos ajenos.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p72" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p72" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			73. No me importa hacer todo lo necesario para que sea efectivo mi
+			trabajo.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p73" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p73" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			74. Con frecuencia soy una de las personas que más anima las
+			fiestas.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p74" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p74" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			75. Me aburro enseguida con el trabajo metódico y minucioso.</strong
+		>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p75" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p75" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			76. La gente con frecuencia cree que soy poco sensible a sus
+			sentimientos.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p76" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p76" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p><strong> 77. Suelo dejarme llevar por mis intuiciones.</strong></p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p77" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p77" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			78. Si trabajo en grupo procuro que se siga un método y un orden.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p78" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p78" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			79. Con frecuencia me interesa averiguar lo que piensa la gente.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p79" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p79" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<p>
+		<strong>
+			80. Esquivo los temas subjetivos, ambiguos y poco claros.
+		</strong>
+	</p>
+	<ol type="1">
+		<li>
+			<input type="radio" name="p80" value="1" required  /> De
+			acuerdo +
+		</li>
+		<li>
+			<input type="radio" name="p80" value="0" required  /> En
+			desacuerdo -
+		</li>
+	</ol>
+	<hr />
+</div>
+ <!-- Pagination -->
+  <ul class="pagination">
+    <li><a href="#" class="page-link" onclick="showPage(1)">1</a></li>
+    <li><a href="#" class="page-link" onclick="showPage(2)">2</a></li>
+    <li><a href="#" class="page-link" onclick="showPage(3)">3</a></li>
+    <li><a href="#" class="page-link" onclick="showPage(4)">4</a></li>
+    <li><a href="#" class="page-link" onclick="showPage(5)">5</a></li>
+    <li><a href="#" class="page-link" onclick="showPage(6)">6</a></li>
+    <li><a href="#" class="page-link" onclick="showPage(7)">7</a></li>
+    <li><a href="#" class="page-link" onclick="showPage(8)">8</a></li>
+  </ul>
+ 
+	<input class="btn btn-primary" type="submit" value="Submit" />
+	<hr />
+</form>
+
+<script>
+  const questionPages = document.querySelectorAll('.question-page');
+  
+  function showPage(pageNumber) {
+    questionPages.forEach((page, index) => {
+      if (index === pageNumber - 1) {
+        page.style.display = 'block';
+      } else {
+        page.style.display = 'none';
+      }
+    });
+  }
+</script>

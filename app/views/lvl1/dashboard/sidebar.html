@@ -1,0 +1,92 @@
+<div id="layoutSidenav_nav">
+	<nav class="sidenav shadow-right sidenav-light">
+		<div class="sidenav-menu">
+			<div class="nav accordion" id="accordionSidenav">
+				<div class="sidenav-menu-heading">SISTEM</div>
+				<!-- Sidenav Link (Charts)-->
+				<a class="nav-link" href="<?php echo RUTA_URL; ?>user/">
+					<div class="nav-link-icon">
+						<i class="fa-solid fa-chart-pie"></i>
+					</div>
+					Dasboard
+				</a>
+				<!-- Sidenav Menu Heading (Core)-->
+				<div class="sidenav-menu-heading">Psicologia</div>
+				<!-- Sidenav Accordion (Dashboard)-->
+				<a
+					class="nav-link collapsed"
+					href="javascript:void(0);"
+					data-bs-toggle="collapse"
+					data-bs-target="#collapseDashboards"
+					aria-expanded="false"
+					aria-controls="collapseDashboards"
+				>
+					<div class="nav-link-icon">
+						<i class="fa-solid fa-file-chart-column"></i>
+					</div>
+					Tests
+					<div class="sidenav-collapse-arrow">
+						<i class="fas fa-angle-down"></i>
+					</div>
+				</a>
+				<div
+					class="collapse"
+					id="collapseDashboards"
+					data-bs-parent="#accordionSidenav"
+				>
+					<nav
+						class="sidenav-menu-nested nav accordion"
+						id="accordionSidenavPages"
+					>
+						<a
+							class="nav-link"
+							href="<?php echo RUTA_URL; ?>user/test/1"
+						>
+							CANAL DE APRENDIZAJE DE PREFERENCIA
+						</a>
+						<a
+							class="nav-link"
+							href="<?php echo RUTA_URL; ?>user/test/2"
+						>
+							Test Estilo de Aprendizajes (Modelo PNL)
+						</a>
+						<a
+							class="nav-link"
+							href="<?php echo RUTA_URL; ?>user/test/3"
+						>
+							HONEY-ALONSO de ESTILOS DE APRENDIZAJE
+						</a>
+						<a
+							class="nav-link"
+							href="<?php echo RUTA_URL; ?>user/test/4"
+						>
+							Test de Diagnóstico de Riesgos Psicosociales 
+						</a>
+					</nav>
+				</div>
+				<!-- Sidenav Heading (Analisis)-->
+				<div class="sidenav-menu-heading">Analisis</div>
+				<!-- Sidenav Link (Charts)-->
+				<a
+					class="nav-link d-none"
+					href="<?php echo RUTA_URL; ?>user/chart_pie/"
+				>
+					<div class="nav-link-icon">
+						<i class="fa-solid fa-chart-pie"></i>
+					</div>
+					Graficas de test
+				</a>
+				<!-- Sidenav Link (2)-->
+			</div>
+		</div>
+		<!-- Sidenav Footer-->
+		<div class="sidenav-footer">
+			<div class="sidenav-footer-content">
+				<div class="sidenav-footer-subtitle">Logged in as:</div>
+				<div class="sidenav-footer-title">
+					<?php echo $datos['user']['name'] . ' ' .  $datos['user']['surnames']; ?>
+				</div>
+			</div>
+		</div>
+	</nav>
+</div>

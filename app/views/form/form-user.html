@@ -1,0 +1,79 @@
+<form action="" method="post">
+	<div class="row g-3">
+		<div class="col-md-6">
+			<label for="text">Nombre</label>
+			<input
+				type="text"
+				name="nombre"
+				class="form-control"
+				id="inputEmail4"
+			/>
+		</div>
+		<div class="col-md-6">
+			<label for="text">Apellido</label>
+			<input
+				type="text"
+				name="apellidos"
+				class="form-control"
+				id="inputPassword"
+			/>
+		</div>
+		<div class="col-sm-6">
+			<label for="email">Correo</label>
+			<input
+				type="email"
+				name="email"
+				class="form-control"
+				id="email"
+				placeholder="@.com"
+			/>
+		</div>
+		<div class="col-sm-6">
+			<label for="password">Password</label>
+			<input
+				type="password"
+				name="password"
+				class="form-control"
+				id="password"
+				placeholder="password"
+			/>
+		</div>
+		<div class="col-sm-4">
+			<label for="tel">Telefono</label>
+			<input
+				type="number"
+				name="tel"
+				class="form-control"
+				id="tel"
+				placeholder="Telefono"
+			/>
+		</div>
+		<div class="col-md-4">
+			<label for="inputCity">Ciudad</label>
+			<input
+				type="text"
+				name="ciudad"
+				class="form-control"
+				id="inputCity"
+			/>
+		</div>
+		<div class="col">
+			<label for="number">Codigo Postal</label>
+			<input type="number" name="cp" class="form-control" id="C.P." />
+		</div>
+		<?php if($datos['user']['role'] == 3) : ?>
+		<div class="col">
+			<label for="number">Rol</label>
+			<select name="role" id="" class="form-select">
+				<option value="1">Alumno</option>
+				<option value="2">Psicologo</option>
+				<option value="3">Admin</option>
+			</select>
+		</div>
+		<?php endif; ?>
+		<div class="col-sm-12">
+			<button type="submit" class="btn btn-primary">Guardar</button>
+			<button type="reset" class="btn btn-info">reset</button>
+		</div>
+	</div>
+</form>
